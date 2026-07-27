@@ -31,8 +31,19 @@ export default function HomePage() {
           color: tokens.color.textPrimary,
         }}
       >
-        Anime Chronology Challenge
+        Cronimé
       </Typography>
+            <Typography
+        variant="subtitle1"
+        sx={{
+          color: tokens.color.textPrimary,
+        }}
+      >
+        ¿Cuál de estos dos es el más nuevo? ¿Cuál es el más antiguo?
+        <br></br>
+        Poné a prueba tu conocimiento sobre animé.
+      </Typography>
+      
 
       <Box
         sx={{
@@ -42,21 +53,21 @@ export default function HomePage() {
         }}
       >
         <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-          Best Streak:{' '}
+          Mejor Racha:{' '}
           <Box component="span" sx={{ color: tokens.color.gold, fontWeight: 700 }}>
             {saveData.bestStreak}
           </Box>
         </Typography>
 
         <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-          Best Time:{' '}
+          Mejor Tiempo:{' '}
           <Box component="span" sx={{ color: tokens.color.gold, fontWeight: 700 }}>
             {formatTime(saveData.bestTime)}
           </Box>
         </Typography>
 
         <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-          Games Played:{' '}
+          Partidas Jugadas:{' '}
           <Box component="span" sx={{ color: tokens.color.gold, fontWeight: 700 }}>
             {saveData.totalGames}
           </Box>
@@ -74,7 +85,7 @@ export default function HomePage() {
           fontSize: '1.1rem',
         }}
       >
-        Start
+        Jugar
       </Button>
     </Box>
   );

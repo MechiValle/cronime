@@ -37,19 +37,19 @@ export default function ResultsPage() {
       }}
     >
       <Typography variant="h3" sx={{ color: tokens.color.textPrimary }}>
-        {result.isNewRecord ? 'New Record!' : 'Game Over'}
+        {result.isNewRecord ? '¡Nuevo Récord!' : 'Racha Concluída'}
       </Typography>
 
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
         <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-          Final Streak:{' '}
+          Racha:{' '}
           <Box component="span" sx={{ color: tokens.color.gold, fontWeight: 700 }}>
             {result.finalStreak}
           </Box>
         </Typography>
 
         <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-          Time:{' '}
+          Tiempo:{' '}
           <Box component="span" sx={{ color: tokens.color.gold, fontWeight: 700 }}>
             {formatTime(result.finalTimeMs)}
           </Box>
@@ -58,21 +58,21 @@ export default function ResultsPage() {
         <Box sx={{ height: 8 }} />
 
         <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-          Best Streak:{' '}
+          Mejor Racha:{' '}
           <Box component="span" sx={{ color: tokens.color.gold, fontWeight: 700 }}>
             {saveData.bestStreak}
           </Box>
         </Typography>
 
         <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-          Best Time:{' '}
+          Mejor Tiempo:{' '}
           <Box component="span" sx={{ color: tokens.color.gold, fontWeight: 700 }}>
             {formatTime(saveData.bestTime)}
           </Box>
         </Typography>
 
         <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-          Games Played:{' '}
+          Partidas Jugadas:{' '}
           <Box component="span" sx={{ color: tokens.color.gold, fontWeight: 700 }}>
             {saveData.totalGames}
           </Box>
@@ -81,10 +81,10 @@ export default function ResultsPage() {
 
       <Box sx={{ display: 'flex', gap: 2 }}>
         <Button variant="outlined" color="secondary" size="large" onClick={() => navigate('/')}>
-          Home
+          Inicio
         </Button>
         <Button variant="contained" color="primary" size="large" onClick={() => navigate('/game')}>
-          Play Again
+          Jugar otra vez
         </Button>
       </Box>
     </Box>

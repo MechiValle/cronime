@@ -71,7 +71,7 @@ export default function GamePage() {
             }}
           >
             <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-              Loading anime library…
+              Cargando base de datos…
             </Typography>
           </Box>
         ) : (

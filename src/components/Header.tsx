@@ -9,8 +9,8 @@ type HeaderProps = {
 };
 
 const questionLabel: Record<Question, string> = {
-  newer: 'Which anime is newer?',
-  older: 'Which anime is older?',
+  newer: '¿Cuál de los dos es el más NUEVO?',
+  older: '¿Cuál de los dos es el más ANTIGUO?',
 };
 
 export default function Header({ question, streak }: HeaderProps) {
@@ -26,7 +26,7 @@ export default function Header({ question, streak }: HeaderProps) {
       }}
     >
       <Typography
-        variant="subtitle1"
+        variant="h4"
         sx={{
           color: tokens.color.textPrimary,
           fontWeight: 500,
@@ -41,7 +41,7 @@ export default function Header({ question, streak }: HeaderProps) {
           color: tokens.color.textSecondary,
         }}
       >
-        Current Streak:{' '}
+        Racha Actual:{' '}
         <Box
           component="span"
           sx={{ color: tokens.color.gold, fontWeight: 700 }}
