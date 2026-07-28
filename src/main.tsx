@@ -18,7 +18,7 @@ createRoot(document.getElementById('root')!).render(
     <QueryClientProvider client={queryClient}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <BrowserRouter>
+        <BrowserRouter basename='/cronime'>
           <App />
         </BrowserRouter>
       </ThemeProvider>
