@@ -42,7 +42,7 @@ export default function ResultsPage() {
 
       <Box sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}>
         <Typography variant="body1" sx={{ color: tokens.color.textSecondary }}>
-          Racha:{' '}
+          Racha Actual:{' '}
           <Box component="span" sx={{ color: tokens.color.gold, fontWeight: 700 }}>
             {result.finalStreak}
           </Box>
