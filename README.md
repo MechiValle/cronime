@@ -1,1 +1,1 @@
-https://cronime.netlify.app/
+https://mechivalle.github.io/cronime
