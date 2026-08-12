@@ -1,3 +1,5 @@
+## Cronime
+
 Game built with React and TypeScript where players must determine which anime is newer or older.
 
 ## Features
